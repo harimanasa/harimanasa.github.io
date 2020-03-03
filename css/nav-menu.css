@@ -1,0 +1,121 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+#nav-menu {
+  background: #ffffff;
+  width: auto;
+}
+#nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+  margin-left: 35%;
+}
+#nav-menu ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#nav-menu ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+#nav-menu.align-right ul li {
+  float: right;
+}
+#nav-menu.align-center ul {
+  text-align: center;
+}
+#nav-menu ul li a {
+  color: #333333;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#nav-menu ul li a:hover {
+  color: #333333;
+}
+#nav-menu ul li a:hover:before {
+  width: 100%;
+}
+#nav-menu ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #333333;
+  opacity: .5;
+}
+#nav-menu ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#nav-menu ul li.last > a:after,
+#nav-menu ul li:last-child > a:after {
+  display: none;
+}
+#nav-menu ul li.active a {
+  color: #333333;
+}
+#nav-menu ul li.active a:before {
+  width: 100%;
+}
+#nav-menu.align-right li.last > a:after,
+#nav-menu.align-right li:last-child > a:after {
+  display: block;
+}
+#nav-menu.align-right li:first-child a:after {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #nav-menu ul li {
+    float: none;
+    display: block;
+  }
+  #nav-menu ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fb998c;
+  }
+  #nav-menu ul li.last > a,
+  #nav-menu ul li:last-child > a {
+    border: 0;
+  }
+  #nav-menu ul li a:after {
+    display: none;
+  }
+  #nav-menu ul li a:before {
+    display: none;
+  }
+}
