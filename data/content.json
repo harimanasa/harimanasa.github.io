@@ -1,0 +1,236 @@
+{
+  "profile": {
+    "name": "Manasa Hari",
+    "title": "Senior Customer Solutions Engineer",
+    "company": "Selector AI",
+    "companyUrl": "https://www.selector.ai/",
+    "education": {
+      "degree": "Masters - Software Engineering",
+      "university": "San Jose State University",
+      "universityUrl": "http://www.sjsu.edu/"
+    },
+    "linkedin": "https://www.linkedin.com/in/harimanasa/",
+    "github": "https://github.com/harimanasa",
+    "facebook": "https://www.facebook.com/hari.manasa/"
+  },
+  "achievements": [
+    {
+      "id": "facebook-scholarship",
+      "title": "Facebook Deep Learning Scholarship - Sole Recipient in the USA",
+      "year": "2020",
+      "month": "JAN",
+      "description": "Sole recipient in USA: I got selected in the top 100 students from all over the world for the 'Facebook Pytorch Scholarship Challenge' phase 2. I consider myself fortunate to see that I am the only one selected from the USA.",
+      "image": "images/achievements/FacebookScholarship.jpeg",
+      "link": "https://www.linkedin.com/posts/harimanasa_facebook-facebookdevelopercircles-udacity-activity-6655069855756181504-CSql?utm_source=share&utm_medium=member_desktop",
+      "category": "scholarship"
+    },
+    {
+      "id": "bertelsmann-scholarship",
+      "title": "Awarded the prestigious Bertelsmann's Azure Cloud Architect Challenge Scholarship",
+      "year": "2021",
+      "month": "APR",
+      "description": "Received the prestigious Bertelsmann's Azure Cloud Architect Challenge Scholarship.",
+      "image": "images/achievements/BertlesmannScholarship.jpeg",
+      "link": "https://www.linkedin.com/posts/harimanasa_azure-architect-cloud-activity-6886939000767152129-LK87?utm_source=share&utm_medium=member_desktop",
+      "category": "scholarship"
+    },
+    {
+      "id": "ringcentral-feature",
+      "title": "Featured in RingCentral's Innovation Leadership",
+      "year": "2021",
+      "month": "JUN",
+      "description": "Featured in RingCentral's Innovation Leadership program.",
+      "image": "images/achievements/RingCentral.jpeg",
+      "link": "https://www.linkedin.com/posts/harimanasa_ringcentral-innovation-leadership-activity-6773307952779673601-kM9d?utm_source=share&utm_medium=member_desktop",
+      "category": "recognition"
+    },
+    {
+      "id": "microsoft-azure-scholarship",
+      "title": "Received Microsoft Azure Machine Learning Scholarship 2020",
+      "year": "2021",
+      "month": "MAR",
+      "description": "Received Microsoft Azure Machine Learning Scholarship.",
+      "image": "images/achievements/MicrosoftAzureScholarship.jpeg",
+      "link": "https://www.linkedin.com/posts/harimanasa_azure-microsoft-udacitymicrosoftmlscholarship-activity-6717688707446644736-GaXa?utm_source=share&utm_medium=member_desktop",
+      "category": "scholarship"
+    },
+    {
+      "id": "developerweek-hackathon",
+      "title": "Won DeveloperWeek Hackathon 2020",
+      "year": "2020",
+      "month": "FEB",
+      "description": "Won second place in the nation's biggest challenge-driven annual DeveloperWeek 2020 'Rockstar Routing' Hackathon.",
+      "image": "images/achievements/WinningHackathon.jpeg",
+      "link": "https://www.linkedin.com/posts/ranjanr_sjsu-ibm-innovation-activity-6635989171817316352-w6NW/",
+      "category": "hackathon"
+    },
+    {
+      "id": "facebook-hackathon",
+      "title": "Finalist in Facebook On-the-Spot Hackathon 2019",
+      "year": "2019",
+      "month": "DEC",
+      "description": "Finalist in Facebook On-the-Spot Hackathon 2019.",
+      "image": "images/achievements/FacebookHackathon.jpeg",
+      "image2": "images/achievements/FacebookHackathon1.jpeg",
+      "link": "https://www.linkedin.com/posts/harimanasa_sanfrancisco-hackathon2019-experience-activity-6602026245830086656-0kcC?utm_source=share&utm_medium=member_desktop",
+      "category": "hackathon"
+    },
+    {
+      "id": "toastmasters-winner",
+      "title": "Winner of International speech - Table topics contest held at Area level W3",
+      "year": "2021",
+      "month": "MAR",
+      "description": "Winner of International speech - Table topics contest held at Area level W3.",
+      "image": "images/achievements/toastmasters.jpeg",
+      "link": "https://www.linkedin.com/posts/harimanasa_happy-to-share-the-news-that-i-won-in-international-activity-6378147925729603584-QzDo?utm_source=share&utm_medium=member_desktop",
+      "category": "public-speaking"
+    },
+    {
+      "id": "best-table-topics",
+      "title": "Winner - Best Table Topics in MountainView Toastmasters",
+      "year": "2021",
+      "month": "FEB",
+      "description": "Winner - Best Table Topics in MountainView Toastmasters.",
+      "image": "images/achievements/bestTableTopicAward.png",
+      "category": "public-speaking"
+    },
+    {
+      "id": "best-table-topics-2",
+      "title": "Winner - Best Table Topics in MountainView Toastmasters",
+      "year": "2021",
+      "month": "FEB",
+      "description": "Winner - Best Table Topics in MountainView Toastmasters.",
+      "image": "images/achievements/bestTableTopicAward1.png",
+      "category": "public-speaking"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "prem-sureddy",
+      "quote": "Manasa is a self-motivated and rare to find passionate professional. She has out-of-box thinking and approaches a problem with \"can do\" attitude. She is a quick learner and fast to adapt to any new change.",
+      "author": "Prem Sureddy",
+      "title": "Senior Enterprise Architect at Ericsson Malaysia",
+      "linkedin": "https://www.linkedin.com/in/prem-sureddy/"
+    },
+    {
+      "id": "christoph-emmersberger",
+      "quote": "Ms. Hari exhibited professionalism, eagerness and organizational leadership skills to solve the tasks she was assigned. Her communication and presentation skills are excellent.",
+      "author": "Christoph Emmersberger",
+      "title": "Director, Engineering at Taulia Inc.",
+      "linkedin": "https://www.linkedin.com/in/christoph-emmersberger/"
+    },
+    {
+      "id": "shabari-ganapathy",
+      "quote": "I know Manasa since when I was working as her Teaching Assistant in her Machine Learning class. She is smart, diligent, and hardworking. She demonstrated leadership in her course project work.",
+      "author": "Shabari Girish Ganapathy",
+      "title": "Software Development Engineer at Amazon Web Services (AWS)",
+      "linkedin": "https://www.linkedin.com/in/shabari-girish-ganapathy/"
+    }
+  ],
+  "career": [
+    {
+      "id": "selector-ai",
+      "title": "Senior Customer Solutions Engineer",
+      "company": "Selector AI",
+      "companyUrl": "https://www.selector.ai/",
+      "year": "2023",
+      "month": "APR",
+      "description": "Joined Selector AI as a Senior Customer Solutions Engineer. In my role with direct customer interaction, I deliver solutions with a commitment to achieving 100% satisfaction."
+    },
+    {
+      "id": "splunk",
+      "title": "Software Engineer",
+      "company": "Splunk",
+      "companyUrl": "https://www.splunk.com/",
+      "year": "2021",
+      "month": "APR",
+      "description": "Joined Splunk and played a vital role in over four major projects within a two-year timeframe."
+    },
+    {
+      "id": "google-dsc",
+      "title": "Technical Design Lead",
+      "company": "Google DSC, SJSU",
+      "companyUrl": "https://dscsjsu.com/",
+      "year": "2020",
+      "month": "SEP",
+      "description": "Joined as a technical design lead at Google DSC, SJSU."
+    },
+    {
+      "id": "taulia-intern",
+      "title": "Software Engineering Intern",
+      "company": "Taulia",
+      "companyUrl": "https://taulia.com/",
+      "year": "2020",
+      "month": "AUG",
+      "description": "Successfully completed the summer internship at Taulia. Worked in the Platform Engineering team under the direction of Christoph Emmersberger, Director of Engineering. Developed an administrative configuration utility to setup external reference rate providers.",
+      "certificate": "files/Taulia_Certificate_of_Internship.pdf"
+    },
+    {
+      "id": "developerweek-winner",
+      "title": "Hackathon Winner",
+      "company": "DeveloperWeek 2020",
+      "companyUrl": "https://www.linkedin.com/posts/ranjanr_sjsu-ibm-innovation-activity-6635989171817316352-w6NW/",
+      "year": "2020",
+      "month": "FEB",
+      "description": "Won second place in the nation's biggest challenge-driven annual DeveloperWeek 2020 'Rockstar Routing' Hackathon."
+    },
+    {
+      "id": "facebook-scholarship",
+      "title": "Facebook PyTorch Scholarship",
+      "company": "Facebook",
+      "companyUrl": "https://www.udacity.com/scholarships/facebook-pytorch-scholarship",
+      "year": "2020",
+      "month": "JAN",
+      "description": "Sole recipient of the Facebook PyTorch Scholarship from the USA."
+    },
+    {
+      "id": "sjsu-graduate",
+      "title": "Graduate Student",
+      "company": "San Jose State University",
+      "companyUrl": "https://sjsu.edu/msse/",
+      "year": "2019",
+      "month": "AUG",
+      "description": "Joined as a graduate student at San Jose State University."
+    },
+    {
+      "id": "tcs-developer",
+      "title": "Full Stack Developer",
+      "company": "Tata Consultancy Services",
+      "companyUrl": "https://www.tcs.com/",
+      "year": "2013-2018",
+      "description": "Worked as a full stack developer for Tata Consultancy Services for 5.5 years."
+    }
+  ],
+  "navigation": [
+    {
+      "title": "Home",
+      "url": "/",
+      "icon": "fas fa-home"
+    },
+    {
+      "title": "Hackathons",
+      "url": "pages/hackathons.html",
+      "icon": "fas fa-code"
+    },
+    {
+      "title": "Projects",
+      "url": "pages/projects.html",
+      "icon": "fas fa-project-diagram"
+    },
+    {
+      "title": "Testimonials",
+      "url": "pages/testimonials.html",
+      "icon": "fas fa-quote-left"
+    },
+    {
+      "title": "Achievements",
+      "url": "pages/achievements.html",
+      "icon": "fas fa-trophy"
+    },
+    {
+      "title": "Music & Dance",
+      "url": "pages/music.html",
+      "icon": "fas fa-music"
+    }
+  ]
+} 

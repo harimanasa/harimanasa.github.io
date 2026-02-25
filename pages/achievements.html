@@ -1,301 +1,322 @@
 <!DOCTYPE html>
-<html>
-<title>Welcome - Manasa Hari</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../css/main.css">
-<!-- <link rel="stylesheet" href="css/nav-menu.css"> -->
-<link rel="stylesheet" href="../css/timeline.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-/*html,body,,,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}*/
-img {
-            width: 40vw; /* 80% of the viewport width */
-            height: auto; /* Maintain aspect ratio */
-            display: block;
-            margin: 0 auto; /* Center the image horizontally */
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manasa Hari's Achievements and Accolades - Scholarships, Hackathons, and Professional Recognition">
+    <meta name="keywords" content="Manasa Hari, Achievements, Scholarships, Hackathons, Facebook Scholarship, Microsoft Azure, DeveloperWeek">
+    <meta name="author" content="Manasa Hari">
+    
+    <title>Achievements & Accolades - Manasa Hari</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/timeline.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Achievements & Accolades - Manasa Hari">
+    <meta property="og:description" content="Manasa Hari's Achievements and Accolades - Scholarships, Hackathons, and Professional Recognition">
+    <meta property="og:image" content="../images/profile.png">
+    <meta property="og:url" content="https://harimanasa.github.io/pages/achievements.html">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/">HARIMANASA.GITHUB.IO</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="hackathons.html" class="nav-link">Hackathons</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="testimonials.html" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="achievements.html" class="nav-link active">Achievements</a>
+                </li>
+                <li class="nav-item">
+                    <a href="music.html" class="nav-link">Music & Dance</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Achievements & Accolades</h1>
+                <p class="page-subtitle">A collection of my professional achievements, scholarships, and recognitions</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-section">
+                <h3>Filter by Category</h3>
+                <div class="filter-buttons">
+                    <button class="achievement-filter active" data-category="all">All</button>
+                    <button class="achievement-filter" data-category="scholarship">Scholarships</button>
+                    <button class="achievement-filter" data-category="hackathon">Hackathons</button>
+                    <button class="achievement-filter" data-category="recognition">Recognition</button>
+                    <button class="achievement-filter" data-category="public-speaking">Public Speaking</button>
+                </div>
+            </div>
+
+            <!-- Achievements Container -->
+            <div class="achievements-container">
+                <!-- Achievements will be loaded dynamically -->
+            </div>
+
+            <!-- Add Achievement Button (Admin Only) -->
+            <div class="admin-section" style="display: none;">
+                <button id="add-achievement-btn" class="btn-primary">
+                    <i class="fas fa-plus"></i> Add New Achievement
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/harimanasa/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/harimanasa" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/hari.manasa/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+                <p class="copyright">© 2024 Manasa Hari. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/content-manager.js"></script>
+
+    <style>
+        /* Page specific styles */
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
         }
 
-{
-  color:#009999;
-}
-A {text-decoration: none;} 
-li{
-  margin-left: 15px;
-}
-</style>
-<body class="main-light-grey">
+        .page-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
 
-<!-- Page Container -->
-<div class="main-content main-margin-top" style="max-width:1400px;">
+        .page-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
 
-  <!-- The Grid -->
-  <div class="main-row-padding">
+        .filter-section {
+            margin-bottom: 2rem;
+        }
 
-<!--     <div id='nav-menu'>
-    <div>
-      <ul>
-         <li class='active'><a href='#'>Home</a></li>
-         <li><a href='#'>Products</a></li>
-         <li><a href='#'>Company</a></li>
-         <li><a href='#'>Contact</a></li>
-      </ul>
-    </div>
-    </div> -->
-  
-    <!-- Left Column -->
+        .filter-section h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
 
-    <div class="navigation-wrapper">
-      <div class="site-name" style="margin-left: 1.8%; font-size: 16px;">
-        <a href="http://harimanasa.github.io/">HARIMANASA.GITHUB.IO</a>
-      </div><!-- /.site-name -->
-      <div class="top-navigation" style="margin-left: 14.69%;">
-        <nav role="navigation" id="site-nav" class="nav">
-          <ul>   
-            <li><a href="http://harimanasa.github.io/" >Home</a></li>
-            <li><a href="../pages/hackathons.html" >Hackathons</a></li>
-            <li><a href="../pages/projects.html" >Projects</a></li>
-            <li><a href="../pages/testimonials.html" >Testimonials</a></li>
-            <li><a href="../pages/achievements.html" >Achievements & Accolades</a></li>
-            <li><a href="../pages/music.html" >Music And Dance</a></li>
-        </ul>
-        </nav>
-      </div><!-- /.top-navigation -->
-    </div><!-- /.navigation-wrapper --> 
-    <div class="main-third">
-    
-      <div class="main-white main-text-grey main-card-4">
-        <div class="main-display-container">
-          <img src="../images/profile.png" class="profilePicture" alt="Manasa Hari">
-          <!-- <div class="main-display-bottomleft main-container main-text-black"> -->
-            <!-- <>Manasa Hari</> -->
-          <!-- </div> -->
-        </div>
-        <div class="main-container">
-          <br>
-          <p style="padding-left: 10%;"><i class="fa fa-graduation-cap fa-fw main-margin-right main-large main-text-teal"></i>Masters - Software Engineering</p>
-          <p style="padding-left: 10%"><i class="fa fa-university fa-fw main-margin-right main-large main-text-teal"></i>San Jose State University</p>
-          <hr>
-<!--           <div class="section-inner">
-          < class="heading" style="text-align: center;">Testimonials</><br> -->
-          <!-- <blockquote class="quote">                                   -->
-                                    <p><i class="fa fa-quote-left" style="color: #009688"></i> &nbsp; <a href="https://www.linkedin.com/in/harimanasa/"> Manasa is a self-motivated and rare to find passionate professional. She has out-of-box thinking and approaches a problem with "can do" attitude. She is a quick learner and fast to adapt to any new change. Apart from all the technical acumen, she makes the work environment lively and gels into team with least friction. &nbsp; <i class="fa fa-quote-right" style="color: #009688"></a></i> <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- Prem Sureddy, Senior Enterprise Architect at Ericsson Malaysia Sdn. Bhd.</p>
-          <br>
-        </div>
-      </div><br>
+        .filter-buttons {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
 
-    <!-- End Left Column -->
-    </div>
+        .achievement-filter {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border-color);
+            background: var(--bg-primary);
+            color: var(--text-secondary);
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+        }
 
-    <!-- Right Column -->
-          <div class="main-twothird">
-    
-      <div class="main-container main-card main-white main-margin-bottom">
-    
-      <div class="">
-        <!-- < class="main-t main-padding-16">Welcome</> -->
-      
-                              <div class="item row">
-                                <a class="" href="https://www.linkedin.com/posts/harimanasa_facebook-facebookdevelopercircles-udacity-activity-6655069855756181504-CSql?utm_source=share&utm_medium=member_desktop" target="_blank">
-                                <!-- <img class="img-fluid project-image" src="projects/" alt="project name" /> -->
-                                </a>
-                                <div class="">
-                                    <h1><a style="color:#993355" href="https://www.linkedin.com/posts/harimanasa_facebook-facebookdevelopercircles-udacity-activity-6655069855756181504-CSql?utm_source=share&utm_medium=member_desktop" target="_blank">Facebook Deep Learning Scholarship - Sole Recipient in the USA</a></h1>
-                                    <p class="mb-2">
-                                    <i><b><a style="color:#191970; font-size: 24.5px;" href="https://www.linkedin.com/posts/harimanasa_facebook-facebookdevelopercircles-udacity-activity-6655069855756181504-CSql?utm_source=share&utm_medium=member_desktop"> Sole recipient in USA: </a></b></i>  
-                                    I got selected in the top 100 students from all over the world for the 'Facebook Pytorch Scholarship Challenge' phase 2. 
-                                    I consider myself fortunate to see that I am the only one selected from the USA.  
-                                    <br>     
-                                    <br>
-                                    <img src="../images/achievements/FacebookScholarship.jpeg" alt="Facebook Scholarship">
-                                    <br>
-                                    <span style="color:#191970"> Link: </span>
-                                    <a style="color:#191970" href="https://www.linkedin.com/posts/harimanasa_facebook-facebookdevelopercircles-udacity-activity-6655069855756181504-CSql?utm_source=share&utm_medium=member_desktop" target="_blank">https://www.linkedin.com/posts/harimanasa_facebook-facebookdevelopercircles-udacity-activity-6655069855756181504-CSql?utm_source=share&utm_medium=member_desktop</a>
-                                    <hr>
-                                    </p>
-  
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            
+        .achievement-filter:hover,
+        .achievement-filter.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
 
-                            <div class="item row">
-                              <div class="">
-                                  <h1><a style="color:#993355" href="https://www.linkedin.com/posts/harimanasa_azure-architect-cloud-activity-6886939000767152129-LK87?utm_source=share&utm_medium=member_desktop" target="_blank">Awarded the prestigious Bertelsmann's Azure Cloud Architect Challenge Scholarship</a></h1>
-                                  <p class="mb-2">
-                                  <i><b><a style="color:#191970; font-size: 24.5px;" href="https://www.linkedin.com/posts/harimanasa_azure-architect-cloud-activity-6886939000767152129-LK87?utm_source=share&utm_medium=member_desktop"> 2021. </a></b></i>  
-                                  <br>     
-                                  <br>
-                                  <img src="../images/achievements/BertlesmannScholarship.jpeg" alt="BertlesmannScholarship">
-                                  <br>
-                                  <span style="color:#191970"> Link: </span>
-                                  <a style="color:#191970" href="https://www.linkedin.com/posts/harimanasa_azure-architect-cloud-activity-6886939000767152129-LK87?utm_source=share&utm_medium=member_desktop" target="_blank">https://www.linkedin.com/posts/harimanasa_azure-architect-cloud-activity-6886939000767152129-LK87?utm_source=share&utm_medium=member_desktop</a>
-                                  <hr>
-                                  </p>
+        .achievements-container {
+            display: grid;
+            gap: 2rem;
+        }
 
-                              </div><!--//desc-->                          
-                          </div><!--//item-->
+        .achievement-item {
+            animation: fadeInUp 0.6s ease-out;
+        }
 
+        .achievement-card {
+            background: var(--bg-primary);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            overflow: hidden;
+            transition: var(--transition);
+        }
 
-                          <div class="item row">
-                            <div class="">
-                                <h1><a style="color:#993355"
-                                   href="https://www.linkedin.com/posts/harimanasa_ringcentral-innovation-leadership-activity-6773307952779673601-kM9d?utm_source=share&utm_medium=member_desktop" 
-                                   target="_blank">Featured in RingCentral's Innovation Leadership</a></h1>
-                                <p class="mb-2">
-                                <i><b><a style="color:#191970; font-size: 24.5px;" 
-                                  href="https://www.linkedin.com/posts/harimanasa_ringcentral-innovation-leadership-activity-6773307952779673601-kM9d?utm_source=share&utm_medium=member_desktop"> 
-                                  2021. </a></b></i>  
-                                <br>     
-                                <br>
-                                <img src="../images/achievements/RingCentral.jpeg" alt="RingCentralLeadership">
-                                <br>
-                                <span style="color:#191970"> Link: </span>
-                                <a style="color:#191970" href="https://www.linkedin.com/posts/harimanasa_ringcentral-innovation-leadership-activity-6773307952779673601-kM9d?utm_source=share&utm_medium=member_desktop" 
-                                target="_blank">https://www.linkedin.com/posts/harimanasa_ringcentral-innovation-leadership-activity-6773307952779673601-kM9d?utm_source=share&utm_medium=member_desktop</a>
-                                <hr>
-                                </p>
+        .achievement-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
 
-                            </div><!--//desc-->    
-                            </div> 
-                            
-                            <div class="item row">
-                              <div class="">
-                                  <h1><a style="color:#993355"
-                                     href="https://www.linkedin.com/posts/harimanasa_azure-microsoft-udacitymicrosoftmlscholarship-activity-6717688707446644736-GaXa?utm_source=share&utm_medium=member_desktop" 
-                                     target="_blank">Received Microsoft Azure Machine Learning Scholarship 2020</a></h1>
-                                  <p class="mb-2">
-                                  <i><b><a style="color:#191970; font-size: 24.5px;" 
-                                    href="https://www.linkedin.com/posts/harimanasa_azure-microsoft-udacitymicrosoftmlscholarship-activity-6717688707446644736-GaXa?utm_source=share&utm_medium=member_desktop"> 
-                                    2021. </a></b></i>  
-                                  <br>     
-                                  <br>
-                                  <img src="../images/achievements/MicrosoftAzureScholarship.jpeg" alt="MicrosoftAzureScholarship">
-                                  <br>
-                                  <span style="color:#191970"> Link: </span>
-                                  <a style="color:#191970" href="https://www.linkedin.com/posts/harimanasa_azure-microsoft-udacitymicrosoftmlscholarship-activity-6717688707446644736-GaXa?utm_source=share&utm_medium=member_desktop" 
-                                  target="_blank">https://www.linkedin.com/posts/harimanasa_azure-microsoft-udacitymicrosoftmlscholarship-activity-6717688707446644736-GaXa?utm_source=share&utm_medium=member_desktop</a>
-                                  <hr>
-                                  </p>
-                              </div></div>
+        .achievement-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
 
-                              <div class="item row">
-                                <div class="">
-                                    <h1><a style="color:#993355"
-                                       href="https://www.linkedin.com/posts/harimanasa_azure-microsoft-udacitymicrosoftmlscholarship-activity-6717688707446644736-GaXa?utm_source=share&utm_medium=member_desktop" 
-                                       target="_blank">Won DeveloperWeek Hackathon 2020</a></h1>
-                                    <p class="mb-2">
-                                    <i><b><a style="color:#191970; font-size: 24.5px;" 
-                                      href="https://www.linkedin.com/posts/harimanasa_azure-microsoft-udacitymicrosoftmlscholarship-activity-6717688707446644736-GaXa?utm_source=share&utm_medium=member_desktop"> 
-                                      2021. </a></b></i>  
-                                    <br>     
-                                    <br>
-                                    <img src="../images/achievements/WinningHackathon.jpeg" alt="DeveloperWeek">
-                                    <br>
-                                    <span style="color:#191970"> Link: </span>
-                                    <a style="color:#191970" href="https://www.linkedin.com/posts/harimanasa_azure-microsoft-udacitymicrosoftmlscholarship-activity-6717688707446644736-GaXa?utm_source=share&utm_medium=member_desktop" 
-                                    target="_blank">https://www.linkedin.com/posts/harimanasa_azure-microsoft-udacitymicrosoftmlscholarship-activity-6717688707446644736-GaXa?utm_source=share&utm_medium=member_desktop</a>
-                                    <hr>
-                                    </p>
-                                </div></div>
+        .achievement-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+        }
 
-                                <div class="item row">
-                                  <div class="">
-                                      <h1><a style="color:#993355"
-                                         href="https://www.linkedin.com/posts/harimanasa_sanfrancisco-hackathon2019-experience-activity-6602026245830086656-0kcC?utm_source=share&utm_medium=member_desktop" 
-                                         target="_blank">Finalist in Facebook On-the-Spot Hackathon 2019</a></h1>
-                                      <p class="mb-2">
-                                      <i><b><a style="color:#191970; font-size: 24.5px;" 
-                                        href="https://www.linkedin.com/posts/harimanasa_sanfrancisco-hackathon2019-experience-activity-6602026245830086656-0kcC?utm_source=share&utm_medium=member_desktop"> 
-                                        2021. </a></b></i>  
-                                      <br>     
-                                      <br>
-                                      <img src="../images/achievements/FacebookHackathon.jpeg" alt="Facebook Hackathon">
-                                      <img src="../images/achievements/FacebookHackathon1.jpeg" alt="Facebook Hackathon">
-                                      <br>
-                                      <span style="color:#191970"> Link: </span>
-                                      <a style="color:#191970" href="https://www.linkedin.com/posts/harimanasa_sanfrancisco-hackathon2019-experience-activity-6602026245830086656-0kcC?utm_source=share&utm_medium=member_desktop" 
-                                      target="_blank">https://www.linkedin.com/posts/harimanasa_sanfrancisco-hackathon2019-experience-activity-6602026245830086656-0kcC?utm_source=share&utm_medium=member_desktop</a>
-                                      <hr>
-                                      </p>
-                                  </div></div>
+        .achievement-meta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
 
-                                    <div class="item row">
-                                      <div class="">
-                                          <h1><a style="color:#993355"
-                                             href="https://www.linkedin.com/posts/harimanasa_happy-to-share-the-news-that-i-won-in-international-activity-6378147925729603584-QzDo?utm_source=share&utm_medium=member_desktop" 
-                                             target="_blank">Winner of International speech - Table topics contest held at Area level W3</a></h1>
-                                          <p class="mb-2">
-                                          <i><b><a style="color:#191970; font-size: 24.5px;" 
-                                            href="https://www.linkedin.com/posts/harimanasa_happy-to-share-the-news-that-i-won-in-international-activity-6378147925729603584-QzDo?utm_source=share&utm_medium=member_desktop"> 
-                                            2021. </a></b></i>  
-                                          <br>     
-                                          <br>
-                                          <img src="../images/achievements/toastmasters.jpeg" alt="Toastmasters International">
-                                          <br>
-                                          <span style="color:#191970"> Link: </span>
-                                          <a style="color:#191970" href="https://www.linkedin.com/posts/harimanasa_happy-to-share-the-news-that-i-won-in-international-activity-6378147925729603584-QzDo?utm_source=share&utm_medium=member_desktop" 
-                                          target="_blank">https://www.linkedin.com/posts/harimanasa_happy-to-share-the-news-that-i-won-in-international-activity-6378147925729603584-QzDo?utm_source=share&utm_medium=member_desktop</a>
-                                          <hr>
-                                          </p>
-                                      </div></div>
+        .achievement-date,
+        .achievement-category {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
 
-                                      <div class="item row">
-                                        <div class="">
-                                            <h1><a style="color:#993355"
-                                               Winner - Best Table Topics in MountainView Toastmasters></h1>
-                                            <p class="mb-2"> 
-                                            <br>     
-                                            <br>
-                                            <img src="../images/achievements/bestTableTopicAward.png" alt="Toastmasters International">
-                                            <br>
-                                            </p>
-                                        </div></div>
+        .achievement-content {
+            padding: 1.5rem;
+        }
 
-                                        <div class="item row">
-                                          <div class="">
-                                              <h1><a style="color:#993355"
-                                                 Winner - Best Table Topics in MountainView Toastmasters></h1>
-                                              <p class="mb-2"> 
-                                              <br>     
-                                              <br>
-                                              <img src="../images/achievements/bestTableTopicAward1.png" alt="Toastmasters International">
-                                              <br>
-                                              </p>
-                                          </div></div>
-                              
+        .achievement-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
 
-                        </div><!--//item-->
-                            
-                            </div><!--//item-->
-                            
+        .achievement-image {
+            margin: 1rem 0;
+        }
 
-    <!-- End Description -->
+        .achievement-image img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+        }
 
-    <!--Start - Timeline-->
-</div>
-</div>
-</div> 
+        .achievement-actions {
+            margin-top: 1rem;
+        }
 
+        .achievement-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--primary-color);
+            border-radius: var(--radius);
+            transition: var(--transition);
+        }
 
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
-  </div>
-  
-  <!-- End Page Container -->
-</div>
+        .achievement-link:hover {
+            background: var(--primary-color);
+            color: white;
+        }
 
-<footer class="main-container main-teal main-center main-margin-top">
-  <i class="fa fa-facebook-official main-hover-opacity"></i>
-  <i class="fa fa-instagram main-hover-opacity"></i>
-  <i class="fa fa-snapchat main-hover-opacity"></i>
-  <i class="fa fa-pinterest-p main-hover-opacity"></i>
-  <i class="fa fa-twitter main-hover-opacity"></i>
-  <i class="fa fa-linkedin main-hover-opacity"></i>
-  <p>© 2020 Manasa Hari.</p>
-</footer>
+        .error-message {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-secondary);
+        }
 
+        .error-message i {
+            font-size: 3rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .admin-section {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius);
+            cursor: pointer;
+            font-weight: 500;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary:hover {
+            background: var(--secondary-color);
+            transform: translateY(-1px);
+        }
+
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .filter-buttons {
+                justify-content: center;
+            }
+
+            .achievement-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
 </body>
 </html>
