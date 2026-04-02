@@ -4,6 +4,20 @@
     const MODAL_STYLE_ID = 'content-manager-modal-styles';
     const ADMIN_STYLE_ID = 'content-manager-admin-styles';
     const CONTENT_PATH = '/data/content.json';
+    const MONTH_ORDER = {
+        JAN: 1,
+        FEB: 2,
+        MAR: 3,
+        APR: 4,
+        MAY: 5,
+        JUN: 6,
+        JUL: 7,
+        AUG: 8,
+        SEP: 9,
+        OCT: 10,
+        NOV: 11,
+        DEC: 12
+    };
 
     const $ = (selector, root = document) => root.querySelector(selector);
     const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
@@ -31,21 +45,27 @@
         }
 
         async loadContentData() {
-            const savedContent = window.localStorage.getItem(CONTENT_DATA_KEY);
-            if (savedContent) {
-                try {
-                    return JSON.parse(savedContent);
-                } catch (error) {
-                    console.warn('Ignoring invalid saved content data:', error);
+            try {
+                const response = await fetch(`${CONTENT_PATH}?v=${Date.now()}`, { cache: 'no-store' });
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch content data: ${response.status}`);
                 }
-            }
 
-            const response = await fetch(CONTENT_PATH);
-            if (!response.ok) {
-                throw new Error(`Failed to fetch content data: ${response.status}`);
-            }
+                const data = await response.json();
+                window.localStorage.setItem(CONTENT_DATA_KEY, JSON.stringify(data));
+                return data;
+            } catch (fetchError) {
+                const savedContent = window.localStorage.getItem(CONTENT_DATA_KEY);
+                if (savedContent) {
+                    try {
+                        return JSON.parse(savedContent);
+                    } catch (parseError) {
+                        console.warn('Ignoring invalid saved content data:', parseError);
+                    }
+                }
 
-            return response.json();
+                throw fetchError;
+            }
         }
 
         renderPageContent() {
@@ -339,16 +359,24 @@
                 return;
             }
 
-            const groupedItems = this.contentData.career.reduce((groups, item) => {
-                const year = item.year || 'Other';
-                if (!groups[year]) {
-                    groups[year] = [];
-                }
-                groups[year].push(item);
-                return groups;
-            }, {});
+            const sortedCareerItems = [...this.contentData.career].sort((left, right) => {
+                return this.getCareerSortValue(right) - this.getCareerSortValue(left);
+            });
 
-            container.innerHTML = Object.entries(groupedItems).map(([year, items]) => `
+            const groupedItems = sortedCareerItems.reduce((groups, item) => {
+                const year = item.year || 'Other';
+                let group = groups.find(([groupYear]) => groupYear === year);
+
+                if (!group) {
+                    group = [year, []];
+                    groups.push(group);
+                }
+
+                group[1].push(item);
+                return groups;
+            }, []);
+
+            container.innerHTML = groupedItems.map(([year, items]) => `
                 <div class="timeline__group">
                     <span class="timeline__year">${year}</span>
                     ${items.map((item) => this.renderCareerTimelineItem(item)).join('')}
@@ -367,6 +395,17 @@
                 ? `<br><a href="${item.certificate}" target="_blank" rel="noopener noreferrer" style="color:#990000;">View Certificate</a>`
                 : '';
 
+            const relatedLinks = [
+                item.link
+                    ? `<a href="${item.link}" target="_blank" rel="noopener noreferrer" style="color:#990000;">View LinkedIn post</a>`
+                    : '',
+                item.videoUrl
+                    ? `<a href="${item.videoUrl}" target="_blank" rel="noopener noreferrer" style="color:#990000;">Watch full interview</a>`
+                    : ''
+            ].filter(Boolean).join(' | ');
+
+            const relatedLinksMarkup = relatedLinks ? `<br>${relatedLinks}` : '';
+
             return `
                 <div class="timeline__box">
                     <div class="timeline__date">
@@ -375,12 +414,23 @@
                     <div class="timeline__post">
                         <div class="timeline__content">
                             <p>
-                                ${item.title}${companyMarkup}${item.description ? `. ${item.description}` : ''}${certificateMarkup}
+                                ${item.title}${companyMarkup}${item.description ? `. ${item.description}` : ''}${relatedLinksMarkup}${certificateMarkup}
                             </p>
                         </div>
                     </div>
                 </div>
             `;
+        }
+
+        getCareerSortValue(item) {
+            const yearText = String(item.year || '0');
+            const normalizedYear = yearText.includes('-')
+                ? yearText.split('-').pop()
+                : yearText;
+            const year = Number.parseInt(normalizedYear, 10) || 0;
+            const month = MONTH_ORDER[item.month] || 0;
+
+            return (year * 100) + month;
         }
 
         showNotification(message, type = 'info') {
