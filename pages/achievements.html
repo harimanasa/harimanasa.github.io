@@ -1,322 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Manasa Hari's Achievements and Accolades - Scholarships, Hackathons, and Professional Recognition">
-    <meta name="keywords" content="Manasa Hari, Achievements, Scholarships, Hackathons, Facebook Scholarship, Microsoft Azure, DeveloperWeek">
-    <meta name="author" content="Manasa Hari">
-    
-    <title>Achievements & Accolades - Manasa Hari</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/timeline.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Achievements & Accolades - Manasa Hari">
-    <meta property="og:description" content="Manasa Hari's Achievements and Accolades - Scholarships, Hackathons, and Professional Recognition">
-    <meta property="og:image" content="../images/profile.png">
-    <meta property="og:url" content="https://harimanasa.github.io/pages/achievements.html">
-</head>
+<html>
+<title>Welcome - Manasa Hari</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/timeline.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+img {
+  width: 40vw;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="/">HARIMANASA.GITHUB.IO</a>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="/" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="hackathons.html" class="nav-link">Hackathons</a>
-                </li>
-                <li class="nav-item">
-                    <a href="projects.html" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="testimonials.html" class="nav-link">Testimonials</a>
-                </li>
-                <li class="nav-item">
-                    <a href="achievements.html" class="nav-link active">Achievements</a>
-                </li>
-                <li class="nav-item">
-                    <a href="music.html" class="nav-link">Music & Dance</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+A {text-decoration: none;}
+li{
+  margin-left: 15px;
+}
+
+.achievements-container .item {
+  margin-bottom: 2.5rem;
+}
+
+.achievements-container h1 {
+  margin-bottom: 0.5rem;
+}
+
+.achievement-title-link {
+  color: #993355;
+}
+
+.achievement-meta-link,
+.achievement-link-label,
+.achievement-link-url {
+  color: #191970;
+}
+
+.achievement-filter-bar {
+  margin: 1rem 0 2rem;
+}
+
+.achievement-filter {
+  background: transparent;
+  border: 1px solid #009688;
+  color: #009688;
+  padding: 0.45rem 0.85rem;
+  margin: 0 0.4rem 0.4rem 0;
+  cursor: pointer;
+}
+
+.achievement-filter.active {
+  background: #009688;
+  color: white;
+}
+</style>
+<body class="main-light-grey">
+
+<div class="main-content main-margin-top" style="max-width:1400px;">
+  <div class="main-row-padding">
+    <div class="navigation-wrapper">
+      <div class="site-name" style="margin-left: 1.8%; font-size: 16px;">
+        <a href="http://harimanasa.github.io/">HARIMANASA.GITHUB.IO</a>
+      </div>
+      <div class="top-navigation" style="margin-left: 14.69%;">
+        <nav role="navigation" id="site-nav" class="nav">
+          <ul>
+            <li><a href="http://harimanasa.github.io/">Home</a></li>
+            <li><a href="../pages/hackathons.html">Hackathons</a></li>
+            <li><a href="../pages/projects.html">Projects</a></li>
+            <li><a href="../pages/testimonials.html">Testimonials</a></li>
+            <li><a href="../pages/achievements.html">Achievements & Accolades</a></li>
+            <li><a href="../pages/music.html">Music And Dance</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="main-third">
+      <div class="main-white main-text-grey main-card-4">
+        <div class="main-display-container">
+          <img src="../images/profile.png" class="profilePicture" alt="Manasa Hari">
         </div>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="main-content">
-        <div class="container">
-            <div class="page-header">
-                <h1 class="page-title">Achievements & Accolades</h1>
-                <p class="page-subtitle">A collection of my professional achievements, scholarships, and recognitions</p>
-            </div>
-
-            <!-- Filter Buttons -->
-            <div class="filter-section">
-                <h3>Filter by Category</h3>
-                <div class="filter-buttons">
-                    <button class="achievement-filter active" data-category="all">All</button>
-                    <button class="achievement-filter" data-category="scholarship">Scholarships</button>
-                    <button class="achievement-filter" data-category="hackathon">Hackathons</button>
-                    <button class="achievement-filter" data-category="recognition">Recognition</button>
-                    <button class="achievement-filter" data-category="public-speaking">Public Speaking</button>
-                </div>
-            </div>
-
-            <!-- Achievements Container -->
-            <div class="achievements-container">
-                <!-- Achievements will be loaded dynamically -->
-            </div>
-
-            <!-- Add Achievement Button (Admin Only) -->
-            <div class="admin-section" style="display: none;">
-                <button id="add-achievement-btn" class="btn-primary">
-                    <i class="fas fa-plus"></i> Add New Achievement
-                </button>
-            </div>
+        <div class="main-container">
+          <br>
+          <p style="padding-left: 10%;"><i class="fa fa-graduation-cap fa-fw main-margin-right main-large main-text-teal"></i>Masters - Software Engineering</p>
+          <p style="padding-left: 10%"><i class="fa fa-university fa-fw main-margin-right main-large main-text-teal"></i>San Jose State University</p>
+          <hr>
+          <p><i class="fa fa-quote-left" style="color: #009688"></i> &nbsp; <a href="https://www.linkedin.com/in/harimanasa/"> Manasa is a self-motivated and rare to find passionate professional. She has out-of-box thinking and approaches a problem with "can do" attitude. She is a quick learner and fast to adapt to any new change. Apart from all the technical acumen, she makes the work environment lively and gels into team with least friction. &nbsp; <i class="fa fa-quote-right" style="color: #009688"></a></i> <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- Prem Sureddy, Senior Enterprise Architect at Ericsson Malaysia Sdn. Bhd.</p>
+          <br>
         </div>
-    </main>
+      </div><br>
+    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/harimanasa/" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/harimanasa" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.facebook.com/hari.manasa/" target="_blank" aria-label="Facebook">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </div>
-                <p class="copyright">© 2024 Manasa Hari. All rights reserved.</p>
-            </div>
+    <div class="main-twothird">
+      <div class="main-container main-card main-white main-margin-bottom">
+        <div class="main-container">
+          <div class="achievement-filter-bar">
+            <button class="achievement-filter active" data-category="all">All</button>
+            <button class="achievement-filter" data-category="scholarship">Scholarships</button>
+            <button class="achievement-filter" data-category="hackathon">Hackathons</button>
+            <button class="achievement-filter" data-category="recognition">Recognition</button>
+            <button class="achievement-filter" data-category="public-speaking">Public Speaking</button>
+          </div>
+
+          <div class="achievements-container">
+            <!-- Achievements will be loaded dynamically -->
+          </div>
+
+          <div class="admin-section" style="display: none;">
+            <button id="add-achievement-btn" class="btn-primary">Add New Achievement</button>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <!-- JavaScript -->
-    <script src="../scripts/main.js"></script>
-    <script src="../scripts/content-manager.js"></script>
+<footer class="main-container main-teal main-center main-margin-top">
+  <a href="https://www.linkedin.com/in/harimanasa/"><i class="fa fa-linkedin main-hover-opacity"></i></a>
+  <a href="https://www.linkedin.com/in/harimanasa/"><i class="fab fa-github"></i></a>
+  <a href="https://www.facebook.com/hari.manasa/"><i class="fa fa-facebook-official main-hover-opacity"></i></a>
+  <p>© 2020 Manasa Hari.</p>
+</footer>
 
-    <style>
-        /* Page specific styles */
-        .page-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
+<script src="../scripts/main.js"></script>
+<script src="../scripts/content-manager.js"></script>
 
-        .page-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 1rem;
-        }
-
-        .page-subtitle {
-            font-size: 1.125rem;
-            color: var(--text-secondary);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .filter-section {
-            margin-bottom: 2rem;
-        }
-
-        .filter-section h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: 1rem;
-        }
-
-        .filter-buttons {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-
-        .achievement-filter {
-            padding: 0.5rem 1rem;
-            border: 1px solid var(--border-color);
-            background: var(--bg-primary);
-            color: var(--text-secondary);
-            border-radius: var(--radius);
-            cursor: pointer;
-            transition: var(--transition);
-            font-weight: 500;
-        }
-
-        .achievement-filter:hover,
-        .achievement-filter.active {
-            background: var(--primary-color);
-            color: white;
-            border-color: var(--primary-color);
-        }
-
-        .achievements-container {
-            display: grid;
-            gap: 2rem;
-        }
-
-        .achievement-item {
-            animation: fadeInUp 0.6s ease-out;
-        }
-
-        .achievement-card {
-            background: var(--bg-primary);
-            border-radius: var(--radius);
-            box-shadow: var(--shadow-md);
-            overflow: hidden;
-            transition: var(--transition);
-        }
-
-        .achievement-card:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .achievement-header {
-            padding: 1.5rem;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .achievement-title {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: 0.75rem;
-        }
-
-        .achievement-meta {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .achievement-date,
-        .achievement-category {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 0.875rem;
-            color: var(--text-light);
-        }
-
-        .achievement-content {
-            padding: 1.5rem;
-        }
-
-        .achievement-description {
-            color: var(--text-secondary);
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-
-        .achievement-image {
-            margin: 1rem 0;
-        }
-
-        .achievement-image img {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow-sm);
-        }
-
-        .achievement-actions {
-            margin-top: 1rem;
-        }
-
-        .achievement-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 500;
-            padding: 0.5rem 1rem;
-            border: 1px solid var(--primary-color);
-            border-radius: var(--radius);
-            transition: var(--transition);
-        }
-
-        .achievement-link:hover {
-            background: var(--primary-color);
-            color: white;
-        }
-
-        .error-message {
-            text-align: center;
-            padding: 3rem;
-            color: var(--text-secondary);
-        }
-
-        .error-message i {
-            font-size: 3rem;
-            color: var(--text-light);
-            margin-bottom: 1rem;
-        }
-
-        .admin-section {
-            margin-top: 2rem;
-            text-align: center;
-        }
-
-        .btn-primary {
-            background: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 0.75rem 1.5rem;
-            border-radius: var(--radius);
-            cursor: pointer;
-            font-weight: 500;
-            transition: var(--transition);
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .btn-primary:hover {
-            background: var(--secondary-color);
-            transform: translateY(-1px);
-        }
-
-        @media (max-width: 768px) {
-            .page-title {
-                font-size: 2rem;
-            }
-
-            .filter-buttons {
-                justify-content: center;
-            }
-
-            .achievement-meta {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-        }
-    </style>
 </body>
 </html>

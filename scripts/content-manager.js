@@ -272,42 +272,28 @@ class ContentManager {
         if (!container || !this.contentData || !this.contentData.achievements) return;
 
         container.innerHTML = this.contentData.achievements.map(achievement => `
-            <div class="achievement-item" data-category="${achievement.category}">
-                <div class="achievement-card">
-                    <div class="achievement-header">
-                        <h3 class="achievement-title">${achievement.title}</h3>
-                        <div class="achievement-meta">
-                            <span class="achievement-date">
-                                <i class="fas fa-calendar"></i>
-                                ${achievement.month} ${achievement.year}
-                            </span>
-                            <span class="achievement-category">
-                                <i class="fas fa-tag"></i>
-                                ${achievement.category.replace('-', ' ').replace(/\\b\\w/g, l => l.toUpperCase())}
-                            </span>
-                        </div>
-                    </div>
-                    <div class="achievement-content">
-                        <p class="achievement-description">${achievement.description}</p>
-                        ${achievement.image ? `
-                            <div class="achievement-image">
-                                <img src="../${achievement.image}" alt="${achievement.title}" loading="lazy">
-                            </div>
-                        ` : ''}
-                        ${achievement.image2 ? `
-                            <div class="achievement-image">
-                                <img src="../${achievement.image2}" alt="${achievement.title}" loading="lazy">
-                            </div>
-                        ` : ''}
+            <div class="achievement-item item row" data-category="${achievement.category}">
+                <div class="">
+                    <h1>
                         ${achievement.link ? `
-                            <div class="achievement-actions">
-                                <a href="${achievement.link}" target="_blank" class="achievement-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    View Details
-                                </a>
-                            </div>
+                            <a class="achievement-title-link" href="${achievement.link}" target="_blank" rel="noopener noreferrer">${achievement.title}</a>
+                        ` : `
+                            <span class="achievement-title-link">${achievement.title}</span>
+                        `}
+                    </h1>
+                    <p class="mb-2">
+                        <i><b><span class="achievement-meta-link">${achievement.month} ${achievement.year}</span></b></i>
+                        <br>
+                        ${achievement.description ? `${achievement.description}<br>` : ''}
+                        <br>
+                        ${achievement.image ? `<img src="../${achievement.image}" alt="${achievement.title}" loading="lazy"><br>` : ''}
+                        ${achievement.image2 ? `<img src="../${achievement.image2}" alt="${achievement.title}" loading="lazy"><br>` : ''}
+                        ${achievement.link ? `
+                            <span class="achievement-link-label">Link: </span>
+                            <a class="achievement-link-url" href="${achievement.link}" target="_blank" rel="noopener noreferrer">${achievement.link}</a>
                         ` : ''}
-                    </div>
+                        <hr>
+                    </p>
                 </div>
             </div>
         `).join('');
@@ -320,17 +306,21 @@ class ContentManager {
         if (!container) return;
 
         container.innerHTML = this.contentData.testimonials.map(testimonial => `
-            <div class="testimonial">
-                <div class="quote">
-                    <i class="fas fa-quote-left"></i>
+            <article class="testimonial-card">
+                <div class="testimonial-quote">
+                    <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
                     <p>${testimonial.quote}</p>
-                    <i class="fas fa-quote-right"></i>
                 </div>
                 <div class="testimonial-author">
                     <strong>${testimonial.author}</strong>
                     <span>${testimonial.title}</span>
+                    ${testimonial.linkedin ? `
+                        <a href="${testimonial.linkedin}" target="_blank" rel="noopener noreferrer" class="highlight-link">
+                            View profile
+                        </a>
+                    ` : ''}
                 </div>
-            </div>
+            </article>
         `).join('');
     }
 
@@ -340,34 +330,37 @@ class ContentManager {
         const container = document.querySelector('.career-timeline');
         if (!container) return;
 
-        container.innerHTML = this.contentData.career.map(item => `
-            <div class="timeline-item">
-                <div class="timeline-date">
-                    <span class="year">${item.year}</span>
-                    ${item.month ? `<span class="month">${item.month}</span>` : ''}
-                </div>
-                <div class="timeline-content">
-                    <h3>${item.title}</h3>
-                    <p>
-                        ${item.companyUrl ? `
-                            ${item.company ? `${item.title.includes(item.company) ? '' : ''}` : ''}
-                        ` : ''}
-                        ${item.companyUrl && item.company ? `
-                            ${item.description ? '' : ''}
-                        ` : ''}
-                        ${item.company && item.companyUrl ? `
-                            <span>
-                                <a href="${item.companyUrl}" target="_blank" class="highlight-link">
-                                    ${item.company}
-                                </a>
-                            </span>
-                        ` : ''}
-                    </p>
-                    <p>${item.description}</p>
-                    ${item.certificate ? `
-                        <a href="${item.certificate}" target="_blank" class="certificate-link">View Certificate</a>
-                    ` : ''}
-                </div>
+        const groupedItems = this.contentData.career.reduce((groups, item) => {
+            const year = item.year || 'Other';
+            if (!groups[year]) {
+                groups[year] = [];
+            }
+            groups[year].push(item);
+            return groups;
+        }, {});
+
+        container.innerHTML = Object.entries(groupedItems).map(([year, items]) => `
+            <div class="timeline__group">
+                <span class="timeline__year">${year}</span>
+                ${items.map(item => `
+                    <div class="timeline__box">
+                        <div class="timeline__date">
+                            ${item.month ? `<span class="timeline__month">${item.month}</span>` : ''}
+                        </div>
+                        <div class="timeline__post">
+                            <div class="timeline__content">
+                                <p>
+                                    ${item.title}
+                                    ${item.company ? ` at ${item.companyUrl ? `
+                                        <a href="${item.companyUrl}" target="_blank" rel="noopener noreferrer" style="color:#990000;">${item.company}</a>
+                                    ` : item.company}` : ''}
+                                    ${item.description ? `. ${item.description}` : ''}
+                                    ${item.certificate ? `<br><a href="${item.certificate}" target="_blank" rel="noopener noreferrer" style="color:#990000;">View Certificate</a>` : ''}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                `).join('')}
             </div>
         `).join('');
     }
