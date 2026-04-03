@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320" role="img" aria-labelledby="ts ds">
+  <title id="ts">Portfolio site layout overview</title>
+  <desc id="ds">Two-column layout: profile and quotes left, bio and news timeline right.</desc>
+  <rect width="640" height="320" fill="#f1f1f1"/>
+  <text x="320" y="34" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#333">harimanasa.github.io  page structure</text>
+  <rect x="24" y="56" width="180" height="240" rx="6" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <text x="114" y="80" text-anchor="middle" font-size="12" font-weight="600" fill="#009688" font-family="system-ui,sans-serif">Sidebar (~S)</text>
+  <circle cx="114" cy="118" r="28" fill="#e0e0e0"/>
+  <text x="114" y="124" text-anchor="middle" font-size="10" fill="#666">photo</text>
+  <line x1="44" y1="158" x2="184" y2="158" stroke="#eee"/>
+  <text x="114" y="182" text-anchor="middle" font-size="10" fill="#555">education</text>
+  <text x="114" y="210" text-anchor="middle" font-size="10" fill="#555">testimonials</text>
+  <rect x="220" y="56" width="396" height="240" rx="6" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <text x="418" y="80" text-anchor="middle" font-size="12" font-weight="600" fill="#009688" font-family="system-ui,sans-serif">Main column (~T)</text>
+  <rect x="240" y="96" width="356" height="56" rx="4" fill="#fafafa" stroke="#e0e0e0"/>
+  <text x="418" y="120" text-anchor="middle" font-size="11" fill="#444" font-family="system-ui,sans-serif">Introduction &amp; bio</text>
+  <text x="418" y="148" text-anchor="middle" font-size="11" fill="#990000" font-family="Georgia, serif">News  vertical timeline</text>
+  <line x1="268" y1="168" x2="268" y2="272" stroke="#009688" stroke-width="3"/>
+  <circle cx="268" cy="188" r="5" fill="#009688"/>
+  <circle cx="268" cy="232" r="5" fill="#009688"/>
+  <circle cx="268" cy="276" r="5" fill="#009688"/>
+  <rect x="288" y="176" width="300" height="28" fill="#fff" stroke="#ddd"/>
+  <rect x="288" y="220" width="300" height="28" fill="#fff" stroke="#ddd"/>
+</svg>
