@@ -15,6 +15,64 @@ li{
   margin-left: 15px;
 }
 
+.navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0 20px;
+  width: 100%;
+}
+
+.site-name a {
+  color: #343434;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.top-navigation {
+  margin-left: 0 !important;
+}
+
+.top-navigation .nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.top-navigation .nav li {
+  margin-left: 0;
+}
+
+.top-navigation .nav a {
+  color: #343434;
+  font-weight: 600;
+}
+
+.profilePicture {
+  width: 72%;
+  max-width: 260px;
+}
+
+.main-third,
+.main-twothird {
+  float: left;
+}
+
+.main-third {
+  width: 32% !important;
+}
+
+.main-twothird {
+  width: 68% !important;
+}
+
+.main-twothird .main-container p {
+  font-size: 20px;
+}
+
 .timeline__year {
   color: #009688;
   font-weight: 700;
@@ -28,6 +86,27 @@ li{
 .highlight-link {
   background: linear-gradient(transparent 55%, #fff59d 55%);
   padding: 0 2px;
+}
+
+@media (max-width: 900px) {
+  .navigation-wrapper {
+    display: block;
+  }
+
+  .top-navigation .nav ul {
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .main-third,
+  .main-twothird {
+    width: 100% !important;
+    float: none;
+  }
+
+  .profilePicture {
+    width: 58%;
+  }
 }
 
 </style>
