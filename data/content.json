@@ -129,6 +129,176 @@
   ],
   "career": [
     {
+      "id": "ibm-rag-agentic-ai-specialization",
+      "title": "RAG & Agentic AI Professional Specialization",
+      "company": "IBM",
+      "companyUrl": "https://www.ibm.com/",
+      "year": "2026",
+      "month": "FEB",
+      "description": "Completed the RAG & Agentic AI Professional Specialization at IBM, building production-oriented capstone projects across Retrieval-Augmented Generation (RAG), agentic and multi-agent architectures with memory and feedback loops, prompt and tool orchestration with LangChain, collaborative agent workflows with CrewAI and LangGraph, and API-integrated multi-step reasoning pipelines.",
+      "link": "https://www.linkedin.com/posts/harimanasa_agenticai-rag-retrievalaugmentedgeneration-activity-7427042074211803136-B9Ne?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAsIrXwBA9nurGQiYEgNxE184cbUoUkDzaA"
+    },
+    {
+      "id": "adobe-award-agentic-initiatives",
+      "title": "Awarded by Adobe for Agentic Initiatives",
+      "company": "Adobe",
+      "companyUrl": "https://www.adobe.com/",
+      "year": "2026",
+      "month": "FEB",
+      "description": "Recognized by Adobe for contributions and impact across Agentic AI initiatives.",
+      "link": "https://www.linkedin.com/posts/harimanasa_softwareengineer-techleadership-womenintech-activity-7414716439099564032-LgHz?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAsIrXwBA9nurGQiYEgNxE184cbUoUkDzaA"
+    },
+    {
+      "id": "system-design-circle-launched",
+      "title": "Initiated System Design Circle",
+      "company": "System Design Circle",
+      "year": "2026",
+      "month": "JAN",
+      "description": "Launched System Design Circle to share system design concepts, engineering thinking, and scalable architecture discussions through a dedicated video series.",
+      "videoUrl": "https://www.youtube.com/watch?v=J98_xe1u6oI&list=PLIpT21DCXEOVTzNRlnnvwaYyK8l-qxls6"
+    },
+    {
+      "id": "ghc-stage-invitation",
+      "title": "Invited to the Grace Hopper Celebration 2025 Stage",
+      "company": "Grace Hopper Celebration",
+      "companyUrl": "https://ghc.anitab.org/",
+      "year": "2025",
+      "month": "NOV",
+      "description": "Invited to the Grace Hopper Celebration 2025 stage in Chicago.",
+      "link": "https://www.linkedin.com/posts/harimanasa_ghc25-gracehoppercelebration-womenintech-activity-7394797253590360064-i6zL?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAsIrXwBA9nurGQiYEgNxE184cbUoUkDzaA"
+    },
+    {
+      "id": "adobe-tech-talk-cdp-collaboration",
+      "title": "Tech Talk at Adobe: Designing Real-Time CDP Collaboration Platform",
+      "company": "Adobe",
+      "companyUrl": "https://www.adobe.com/",
+      "year": "2025",
+      "month": "OCT",
+      "description": "Presented a system design demo at Adobe's System Design Circle, sharing how the Real-Time CDP Collaboration Platform was designed for systems that scale.",
+      "link": "https://www.linkedin.com/posts/harimanasa_systemdesign-engineeringexcellence-adobelife-activity-7387151968516915200-wtGH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAsIrXwBA9nurGQiYEgNxE184cbUoUkDzaA"
+    },
+    {
+      "id": "adobe-award-september-2025",
+      "title": "Awarded by Adobe",
+      "company": "Adobe",
+      "companyUrl": "https://www.adobe.com/",
+      "year": "2025",
+      "month": "SEP",
+      "description": "Received recognition from Adobe for impactful work and engineering contributions.",
+      "link": "https://www.linkedin.com/posts/harimanasa_gratitude-adobelife-engineeringleadership-activity-7382114938942754816-p-_6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAsIrXwBA9nurGQiYEgNxE184cbUoUkDzaA"
+    },
+    {
+      "id": "adobe-innovation-lab",
+      "title": "Took Part in Adobe's Innovation Lab",
+      "company": "Adobe",
+      "companyUrl": "https://www.adobe.com/",
+      "year": "2025",
+      "month": "AUG",
+      "description": "Took part in Adobe's Innovation Lab, a collaborative space where ideas meet experimentation and innovation.",
+      "link": "https://www.linkedin.com/posts/harimanasa_adobeinnovation-collaboration-innovationlab-activity-7379909234076893184-EKSY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAsIrXwBA9nurGQiYEgNxE184cbUoUkDzaA"
+    },
+    {
+      "id": "sjsu-guest-lecture-cmpe-272",
+      "title": "Guest Lecturer at San Jose State University",
+      "company": "San Jose State University",
+      "companyUrl": "https://www.sjsu.edu/",
+      "year": "2025",
+      "month": "JUL",
+      "description": "Invited as a guest lecturer for CMPE 272 - Enterprise Software Platforms at San Jose State University.",
+      "link": "https://www.linkedin.com/posts/harimanasa_guestlecture-sjsu-enterprisesoftware-activity-7369053440502624256-qohg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAsIrXwBA9nurGQiYEgNxE184cbUoUkDzaA"
+    },
+    {
+      "id": "featured-by-adobe-june-2025",
+      "title": "Featured by Adobe",
+      "company": "Adobe",
+      "companyUrl": "https://www.adobe.com/",
+      "year": "2025",
+      "month": "JUN",
+      "description": "Featured by Adobe as an inspiring story highlighting Manasa's journey and impact.",
+      "link": "https://www.linkedin.com/posts/harimanasa_adobelife-activity-7364346396394577923-VGDR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAsIrXwBA9nurGQiYEgNxE184cbUoUkDzaA"
+    },
+    {
+      "id": "adobe-award-may-2025",
+      "title": "Awarded by Adobe",
+      "company": "Adobe",
+      "companyUrl": "https://www.adobe.com/",
+      "year": "2025",
+      "month": "MAY",
+      "description": "Recognized by Adobe for raising the bar through engineering leadership and impact.",
+      "link": "https://www.linkedin.com/posts/harimanasa_adobelife-raisingthebar-gratitude-activity-7363580867425816580-13Le?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAsIrXwBA9nurGQiYEgNxE184cbUoUkDzaA"
+    },
+    {
+      "id": "developerweek-main-stage-speaker",
+      "title": "From Hackathon Winner to Main Stage Speaker",
+      "company": "DeveloperWeek",
+      "companyUrl": "https://www.developerweek.com/",
+      "year": "2025",
+      "month": "APR",
+      "description": "Featured as a main stage speaker at DeveloperWeek, marking a journey from hackathon winner to conference speaker.",
+      "link": "https://www.linkedin.com/posts/harimanasa_developerweek-mainstagespeaker-fromhackathontostage-activity-7354909436227825664-hEDt?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAsIrXwBA9nurGQiYEgNxE184cbUoUkDzaA"
+    },
+    {
+      "id": "womentech-network-chief-in-tech-summit",
+      "title": "Speaker at WomenTech Network's Chief in Tech Summit 2025",
+      "company": "WomenTech Network",
+      "companyUrl": "https://www.womentech.net/",
+      "year": "2025",
+      "month": "MAR",
+      "description": "Honored to speak at the WomenTech Network's Chief in Tech Summit 2025 and Global Conference 2025.",
+      "link": "https://www.linkedin.com/posts/harimanasa_womenintech-techleadership-engineeringwithempathy-ugcPost-7332224500144529410-5T-q?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAsIrXwBA9nurGQiYEgNxE184cbUoUkDzaA"
+    },
+    {
+      "id": "adobe-award-february-2025",
+      "title": "Awarded by Adobe",
+      "company": "Adobe",
+      "companyUrl": "https://www.adobe.com/",
+      "year": "2025",
+      "month": "FEB",
+      "description": "Received an Adobe award in recognition of impact and contributions.",
+      "link": "https://www.linkedin.com/posts/harimanasa_gratitude-adobelife-adobeforall-activity-7337532904983416834-7W-p?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAsIrXwBA9nurGQiYEgNxE184cbUoUkDzaA"
+    },
+    {
+      "id": "sjsu-guest-lecture-cmpe-202",
+      "title": "Guest Lecture at San Jose State University",
+      "company": "San Jose State University",
+      "companyUrl": "https://www.sjsu.edu/",
+      "year": "2025",
+      "month": "FEB",
+      "description": "Invited to deliver a guest lecture at San Jose State University in CMPE 202, in Prof. Gopinath Vinodh's class.",
+      "link": "https://www.linkedin.com/posts/harimanasa_softwareengineering-techtalks-guestlecture-activity-7329907144865079297-41Iq?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAsIrXwBA9nurGQiYEgNxE184cbUoUkDzaA"
+    },
+    {
+      "id": "speaker-awc-umd",
+      "title": "Speaker for the Association for Women in Computing at UMD",
+      "company": "University of Maryland",
+      "companyUrl": "https://www.umd.edu/",
+      "year": "2025",
+      "month": "JAN",
+      "description": "Spoke for the Association for Women in Computing at the University of Maryland on women in tech, leadership, and mentorship.",
+      "link": "https://www.linkedin.com/posts/harimanasa_womenintech-leadership-mentorship-activity-7320851757134135298-qoaE?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAsIrXwBA9nurGQiYEgNxE184cbUoUkDzaA"
+    },
+    {
+      "id": "adobe-life-interwoven-podcast",
+      "title": "Featured on Adobe Life's Interwoven Podcast",
+      "company": "Adobe",
+      "companyUrl": "https://www.adobe.com/",
+      "year": "2026",
+      "month": "MAR",
+      "description": "Manasa was featured on the first episode of Adobe Life's Interwoven podcast, created in honor of International Women's Day and Women's History Month.",
+      "link": "https://www.linkedin.com/posts/harimanasa_adobelife-womenintech-adobeforall-activity-7437545334089748481-Zt1n?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAsIrXwBA9nurGQiYEgNxE184cbUoUkDzaA"
+    },
+    {
+      "id": "growth-circle-interview",
+      "title": "Real Conversations with Women Leaders",
+      "company": "Growth Circle",
+      "companyUrl": "https://www.linkedin.com/posts/sindhurakandipati_real-conversations-with-women-leaders-manasa-share-7445077518459699201-k-v6/?utm_source=share&utm_medium=member_android&rcm=ACoAABa-XPYBLCYUXMHKdySo-0lwTC6wZ05EmJg",
+      "year": "2026",
+      "month": "APR",
+      "description": "Manasa was interviewed for \"Real Conversations with Women Leaders: Manasa on Career, Confidence & Global Leadership\" by Growth Circle.",
+      "link": "https://www.linkedin.com/posts/sindhurakandipati_real-conversations-with-women-leaders-manasa-share-7445077518459699201-k-v6/?utm_source=share&utm_medium=member_android&rcm=ACoAABa-XPYBLCYUXMHKdySo-0lwTC6wZ05EmJg",
+      "videoUrl": "https://www.youtube.com/watch?v=DAzAdyiPrz4"
+    },
+    {
       "id": "selector-ai",
       "title": "Senior Customer Solutions Engineer",
       "company": "Selector AI",
